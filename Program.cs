@@ -1,7 +1,6 @@
 ﻿using System.IO;
 using System.Collections.Generic;
 
-Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "stores", "201", "NewDir"));
 
 
 var currentDirectory = Directory.GetCurrentDirectory();
@@ -14,8 +13,6 @@ Directory.CreateDirectory(salesTotalDir);
 var salesFiles = FindFiles(storesDirectory);
 File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
   
-File.WriteAllText(Path.Combine(Directory.GetCurrentDirectory(), "greeting.txt"), "Hello World!");
-
 
 foreach (var file in salesFiles)
 {
