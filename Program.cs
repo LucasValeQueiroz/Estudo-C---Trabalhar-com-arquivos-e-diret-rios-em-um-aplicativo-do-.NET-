@@ -23,11 +23,7 @@ IEnumerable<string> FindFiles(string folderName)
         {
             salesFiles.Add(file);
         }
-        //The file name will contain the full path, so only check the end of it
-        if(file.EndsWith("sales.json"))
-        {
-            salesFiles.Add(file);
-        }
+        
     }
 
     return salesFiles;
